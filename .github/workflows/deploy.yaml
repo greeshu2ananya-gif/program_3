@@ -1,4 +1,4 @@
-name: Deploy static content to Pages #workflow name
+name: Deploy static content to Pages
 on: 
   push:
     branches: ["main"]
@@ -26,6 +26,6 @@ jobs:
         with:
           path: '.'
       - name: Deploy to GIthub Pages
-        id: deployment #same as in url
+        id: deployment 
         uses: actions/deploy-pages@v4
         
